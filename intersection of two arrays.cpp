@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<limits.h>
 using namespace std ;
 
 int main(){
@@ -19,7 +20,7 @@ for (int i = 0; i < arr.size(); i++)
         /* code */
         if (element == brr[j])
         {
-            brr[j] = -1;
+            brr[j] = INT_MIN;
             // mark the value if it matched 
             // because whenever we don't mark it then it will again check 
             // for any next same values and cause output error:
@@ -34,7 +35,7 @@ for (int i = 0; i < arr.size(); i++)
             /*
             or : you also can do:
             ans.push_back(brr[j]);
-            brr[j] = -1;
+            brr[j] = INT_MIN;
             break;
             */
             
@@ -44,7 +45,6 @@ for (int i = 0; i < arr.size(); i++)
     }
     
 }
-
 
 
 //printing arrays intersection values 
