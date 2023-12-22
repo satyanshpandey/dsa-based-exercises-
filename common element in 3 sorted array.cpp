@@ -23,7 +23,7 @@ int main(){
     {
         if (a[i]==b[j] && b[j]==c[k])
         {
-            cout<<" Found Common element in array:"<<a[i]<<" ";
+            // cout<<" Found Common element in array:"<<a[i]<<" ";
             ans.push_back(a[i]);
             i++, j++, k++;
         }
@@ -31,7 +31,7 @@ int main(){
         {
             i++;
         }
-        else if (b[i]<c[k])
+        else if (b[j]<c[k])
         {
             j++;
         }
@@ -40,7 +40,7 @@ int main(){
         }
         
     }
-    cout<<"success-->"<<ans[0];
+    cout<<"success-->";
     for (int i = 0; i < ans.size(); i++)
     {
         cout<<ans[i]<<" ";
